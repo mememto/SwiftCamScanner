@@ -29,7 +29,7 @@ public class CropView: UIView {
     var cropPoints = [CGPoint]()
     var cropCircles = [UIView]()
     var cropFrame: CGRect!
-    var cropImageView = UIImageView()
+    public var cropImageView = UIImageView()
     var selectedCircle : UIView? = nil
     var selectedIndex : Int?
     var m:Double = 0
