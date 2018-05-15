@@ -18,6 +18,6 @@ s.source           = { :git => 'https://github.com/mememto/SwiftCamScanner.git',
 s.ios.deployment_target = '8.0'
 s.source_files = 'SwiftCamScanner/Classes/**/*'
 # s.public_header_files = 'Pod/Classes/**/*.h'
-s.dependency 'OpenCV'
+s.dependency 'OpenCV', '~> 3.3.1'
 s.frameworks = 'UIKit'
 end
