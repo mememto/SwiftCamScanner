@@ -27,7 +27,7 @@ public class CropView: UIView {
 
     //MARK:Local Variables
     var cropPoints = [CGPoint]()
-    var cropCircles = [UIView]()
+    public var cropCircles = [UIView]()
     var cropFrame: CGRect!
     public var cropImageView = UIImageView()
     var selectedCircle : UIView? = nil
@@ -165,7 +165,7 @@ public class CropView: UIView {
     /**
      Draw/Redraw the crop rectangle such that it passes through the corner points
      */
-    private func redrawBorderRectangle(){
+    public func redrawBorderRectangle(){
         
         let beizierPath = UIBezierPath()
         beizierPath.move(to: cropCircles[0].center)
